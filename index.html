@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+   
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jogo da Velha</title>
+  </head>
+  <body style="background-color: #3B1D57;">
+    <div class="name_placar">
+      <h1> PLACAR </h1>
+      <div class="placar">
+        <div class="name_X">
+          <h1 > X </h1>
+          <h1 id='winX'> 0 </h1>
+        </div>
+        <div class="name_O">
+          <h1> O </h1>
+          <h1 id='winO'> 0 </h1>
+        </div>
+      </div>  
+    </div>
+
+    <div class="container">
+      <h1 style="color: white;">Jogo da Velha</h1>
+      <div class="pointer">
+        <div class="row border-b">
+          <div class="col border-r" id="pos1"></div>
+          <div class="col border-r"id="pos2"></div>
+          <div class="col" id="pos3"></div>
+        </div>
+
+        <div class="row border-b">
+          <div class="col border-r" id="pos4"></div>
+          <div class="col border-r" id="pos5"></div>
+          <div class="col" id="pos6"></div>
+        </div>
+
+        <div class="row">
+          <div class="col border-r" id="pos7"></div>
+          <div class="col border-r" id="pos8"></div>
+          <div class="col" id="pos9"></div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="tictactoe.js"></script>
+  </body>
+</html>
